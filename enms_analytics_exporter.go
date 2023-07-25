@@ -160,7 +160,7 @@ func appendMetricDataPoints(m pmetric.Metric, data map[string][]*streamingMessag
 
 	}
 
-	data["Metric_value"] = append(data["Metric_value"], &streamingMessageAvro.UnionStringNull{String: MetricTypeData,
+	data["Metric_val"] = append(data["Metric_val"], &streamingMessageAvro.UnionStringNull{String: MetricTypeData,
 		UnionType: streamingMessageAvro.UnionStringNullTypeEnumString})
 
 }
